@@ -1,0 +1,377 @@
+html,
+body,
+#wrap {
+    height: 100%;
+}
+
+html {
+    background: #000;
+}
+
+#wrap  {
+    position: relative;
+    min-height: 500px;
+}
+
+#header_wrap {
+    position: absolute;
+    left:0;
+    top: 0;
+    width: 120px;
+    height: 100%;
+    z-index: 1;
+}
+
+#container_wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.hd_bg {
+    position: absolute;
+    top: 0;
+    left: -120px;
+    width: 120px;
+    height: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+    transition: all 0.3s ease-out;
+}
+
+/* 헤더 로고*/
+
+
+.bg_icon {
+    position: absolute;
+    top: 5%;
+    left: 35px;
+}
+
+.bg_icon img{
+    width: 65px;
+    height: 60px;
+    z-index: 1;
+}
+
+/* 헤더 메뉴 텍스트*/
+
+.menu_wrap {
+    position: absolute;
+    top: 43%;
+    left: 52Px;
+    text-align: center;
+}
+
+.menu_txt {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    color: #fff;    
+    font-family: 'Noto Serif', serif;
+}
+
+
+/* 헤더 메뉴 오픈*/
+
+.menu_list {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    font-size: 15px;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    background: #ee5a35;
+    z-index: 9999;
+}
+
+.menu_list.on {
+    left: 0;
+    transition: .5s;
+}
+
+.menu_list .close_bt {
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    margin-top: -25px;
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+    cursor: pointer;
+    padding-left: 60px;
+}
+
+.menu_list .close_bt::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background: url(/img/index/menu_close.png) no-repeat 0 0 /50px;
+}
+
+.menu_list .close_bt a {
+    line-height: 48px;
+}
+
+.middle_check_wrap {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.middle_check_wrap > div {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.menu_list .gnb_wrap,
+.information_wrap  {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.menu_list .gnb_wrap {
+    margin-right: 250px;
+}
+
+.menu_list .gnb_wrap li {
+    position: relative;
+    color: #fff;
+    font-size: 55px;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+/* 헤더 메뉴 오픈*/
+
+.information_wrap > ul > li {
+    margin-bottom: 40px;
+}
+
+.information_wrap dt {
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.information_wrap dd {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 25px;
+}
+
+/*스토리*/
+
+.information_wrap .story dd {
+    display: inline-block;
+    width: 40px;
+    opacity: 1;
+}
+
+.information_wrap .story img {
+    width: 20px;
+    height: 20px;
+}
+
+/*입사지원*/
+.information_wrap .apply dd {
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    opacity: 1;
+    margin-left: 70px;
+}
+
+.information_wrap .apply dd:first-child {
+    margin-left: 0;
+}
+
+.information_wrap .apply dd::after {
+    content: "";
+    top: 4px;
+    left: 65px;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: url(/img/index/apply.png) no-repeat 0 0 /20px;
+}
+
+/* 헤더 메뉴 버튼*/
+
+.menu_btn {
+    position: absolute;
+    top: -58px;
+    left: -2px;
+    transition: all .3s;
+}
+
+.menu_btn span {
+    color: #999;
+    font-weight: 900;
+    line-height: 100px;
+    transition: all .3s;
+}
+
+.menu_btn span:first-child {
+    display: none;
+}
+
+
+/* 헤더 메뉴 버튼 활성화*/
+
+.menu_btn_move {
+    display: none;
+    position: absolute;
+    top: 15px;
+    left: -18px;
+    border: 1px solid #888;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle ;
+    transition: all .3s;
+    background: url(/img/index/menu.png) no-repeat 50% 50% /18px;
+    cursor: pointer;
+}
+
+.menu_btn_move span {
+    display: block;
+    color: #373737;
+    font-weight: 900;
+    line-height: 10px;
+    margin-right: 2px;
+    box-sizing: border-box;
+}
+
+.menu_btn_move span:first-child {
+    padding-top:10px;
+}
+
+/* 헤더 SNS*/
+
+#header_wrap #sns_btn {
+    position:absolute;
+    width:32px;
+    height:87px;
+    bottom:50px;
+    left:50%;
+    margin-left:-16px;
+}
+
+#header_wrap #sns_btn > div {
+    width:32px;
+    height:87px;
+    border-radius:20px;
+    background:#ee5a35;
+    position:absolute;
+    border:1px solid #ee5a35;
+    box-sizing:border-box;
+    line-height:28px;
+    z-index:2;
+    transition:all 0.5s ease-out;
+}
+    
+#header_wrap #sns_btn > div a {
+    width:100%;
+    height:100%;
+    display:block;
+}
+
+#header_wrap #sns_btn .sns_top {
+    top:0;
+}
+#header_wrap #sns_btn .sns_bottom {
+    bottom:0;
+}
+
+#header_wrap #sns_btn:hover .sns_top {
+    background: #ee5a35 url(/img/index/facebook.png) no-repeat 50% 50% /30px;
+    transition: 1s;
+}
+
+
+#header_wrap #sns_btn:hover .sns_bottom {
+    background: #ee5a35 url(/img/index/youtube.png) no-repeat 50% 50% /30px;
+    transition: 1s;
+}
+
+
+#header_wrap #sns_btn .sns_center {
+    width:100%;
+    height:20px;
+    position:absolute;
+    font-size:10px;
+    line-height:20px;
+    color:#a7a7a7;
+    top:50%;
+    margin-top:-10px;
+    text-align:center;
+}
+
+#header_wrap #sns_btn .sns_cover {
+    position:absolute;
+    width:100%;
+    height:87px;
+    color:#fff;
+    padding-top:16px;
+    font-size:12px;
+    text-align: center;
+    z-index:3;
+    transition:.3s;
+    box-sizing:border-box;
+}
+
+#header_wrap #sns_btn:hover > div {
+    height:32px;
+    border:1px solid #efd4cd;
+}
+
+#header_wrap #sns_btn:hover > .sns_cover {
+    opacity:0;
+    z-index:1;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    color: #fff;
+    text-align: center;
+}
+
+footer ul li {
+    position: relative;
+    display: inline-block;
+    font-size: 13px;
+    opacity: 0.2;
+}
+
+footer .info li {
+    margin-left: 8px;
+}
+
+footer .info li::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -6px;
+    width: 2px;
+    height: 11px;
+    background-color: #fff;
+}
+
+footer .info li:first-child::after {
+    width: 0;
+    height: 0;
+}

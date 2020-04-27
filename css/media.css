@@ -1,0 +1,266 @@
+
+
+@media screen and (max-width: 680px) {
+    #wrap  {
+        min-width: 320px;
+        min-height: 550px;
+    }
+
+    #header_wrap {
+        width: 100%;
+        height: 70px;
+        background-color: #fff;
+        transition: all .5s;
+    }
+
+    /*로고 크키조절 */
+
+    .bg_icon {
+        position: absolute;
+        top: 50%;
+        left: 35px;
+        margin-top: -20px;
+    }
+
+    .bg_icon img {
+        width: 50px;
+        height:40px;
+    }    
+
+    /*메뉴바 */
+    .hd_bg {
+        display: none;
+    }
+    .menu_wrap {
+        position: absolute;
+        top: 0;
+        right: 52px;
+        text-align: center;
+    }
+
+    .menu_btn_move {
+        display: block !important;
+        top: 20px;
+        right: -40px;
+        left: unset;
+        width: 30px;
+        height: 30px;
+    }
+
+    .sns_wrap,
+    .menu_txt { 
+        display: none !important;
+    }
+
+    /*메인텍스트 수정*/
+
+    #container .item_wrap {
+        text-align: center;
+        left: 40px;
+        margin-top: -117px;
+    }
+
+    #container .item_wrap .txt1 {
+        font-size: 32px;
+        letter-spacing: -1px;
+        line-height: 35px;
+        margin-bottom: 10px;
+    }
+
+    #container .item_wrap span {
+        font-size: 13px;
+        margin-top: 20px;
+        line-height: 14px;
+    }
+
+
+    /* 버튼*/
+
+    #container .item_wrap ul {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    #container .item_wrap ul li {
+        width: 110px;
+        height: 35px;
+    }
+
+    #container .item_wrap ul li:first-child {
+        margin-right: 5px;
+    }
+
+    #container .item_wrap ul li a {
+        line-height: 35px;
+        font-size: 12px;
+    }
+
+    #container .item_wrap ul li a:hover{
+        background: #ee5a35;
+        width: 110px;
+        color: #fff;
+        transition: all 0.3s ease-out;
+    }
+    
+    /* 메뉴오픈(주황) */
+    .menu_list .gnb_wrap, .information_wrap {
+        display: block;
+        text-align: left;
+        margin: 10px 0 0 50px;
+    }
+
+    .menu_list .close_bt::before {
+        width: 30px;
+        height: 30px;
+        top: -228px;
+        left: 290px !important;
+        background-size: 30px;
+    }
+
+    .menu_list .close_bt a {
+        display: none;
+    }
+    
+    .menu_list .gnb_wrap { 
+         margin-right: 10px;
+    }
+
+    .menu_list .gnb_wrap li {
+        font-size: 0;
+        width: 200px;
+    }
+    .information_wrap > ul > li {
+        margin-bottom: 5px;
+    }
+
+    .information_wrap > ul > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .menu_list .gnb_wrap li a  {
+        font-size: 30px;
+    }
+
+    .information_wrap dt {
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+
+    .information_wrap > ul dd {
+        font-size: 9px;
+        line-height: 14px;
+    }
+
+    .information_wrap > ul > ul {
+        margin-bottom: 15px;
+    }
+
+    #header_wrap #sns_btn {
+        display: none;
+    }
+
+    .information_wrap .apply a{
+        font-size: 11px;
+    }
+
+    .information_wrap .apply dd::after {
+        left: 45px;
+    }
+
+    /* 상담영역 */
+
+    .count_bt {
+        margin-top: -100px;
+    }
+
+    .count_bt .speed_bt {
+        height: 100px;
+        width: 35px;
+        line-height: 15px;
+        }
+
+    .count_bt .speed_bt a {
+        padding: 0;
+        font-size: 12px;
+        padding: 20px 10px;
+    }
+    .click_icon {
+        display: none;
+    }
+
+    .count_bt .call_bt {
+        margin-top: 10px;
+    }
+
+    .count_bt .call_bt img {
+        margin-top: 16px;
+        padding-right: 18px;
+        width: 20px;
+    }
+
+    .count_wrap {
+        margin-top: -120px;
+    }
+
+    .count_wrap.on {
+        right: -40px;
+    }
+
+    .count_wrap form .speed_count {
+        height: 240px;
+        width: 230px;
+        padding: 20px 10px 0 20px;
+    }
+
+    .count_wrap form .info input[type="text"], 
+    .count_wrap form .info input[type="tel"] {
+        padding-right: 20px;
+    }
+
+    /* 빠른상담 */ 
+
+    .count_wrap .address {
+        display: none;
+    }
+
+    .count_wrap form .call_bt {
+        margin-top: 8px;
+
+}
+    
+    .count_wrap form .call_bt a {
+        padding: 3px 15px;
+    }
+
+    /*푸터*/
+    footer {
+        color: #fff;
+        text-align: center;
+        bottom: 80px;
+    }
+    
+    footer ul li {
+        position: relative;
+        display: inline-block;
+        font-size: 10px;
+        opacity: 0.2;
+    }
+    
+    footer .info li {
+        margin-left: 8px;
+    }
+    
+    footer .info li::after {
+        content: "";
+        position: absolute;
+        top: 3px;
+        left: -6px;
+        width: 2px;
+        height: 11px;
+        background-color: #fff;
+    }
+        
+    footer .info li:first-child::after {
+        width: 0;
+        height: 0;
+    }
+}
