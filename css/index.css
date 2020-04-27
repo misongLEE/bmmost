@@ -1,0 +1,326 @@
+
+/* container */
+
+#container .item_wrap {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    margin-top: -163px;
+}
+
+#container .item_wrap .txt1 {
+    font-size: 60px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: -1px;
+    line-height: 70px;
+    margin-bottom: 30px;
+}
+
+#container .item_wrap span {
+    font-size: 20px;
+    color: #c8c8c8;
+    line-height: 32px;
+}
+
+#container .item_wrap ul {
+    margin-top: 40px;
+    text-align: left;
+}
+
+#container .item_wrap ul li {
+    display: inline-block;
+    width: 170px;
+    height: 50px;
+    text-align: center;
+    color: #ee5a35;
+    border: 1px solid #ee5a35;
+}
+
+#container .item_wrap ul li a {
+    display: block;
+    line-height: 50px;
+}
+
+#container .item_wrap ul li:first-child {
+    margin-right: 20px;
+}
+
+#container .item_wrap ul li a:hover{
+    width: 170px;
+    background: #ee5a35;
+    color: #fff;
+    transition: all 0.3s ease-out;
+}
+
+
+/* count_bt */
+
+.count_bt {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    cursor: pointer;
+    margin-top: -174px;
+}
+
+.count_bt .speed_bt {
+    text-align: center;
+    background-color: #ee5a35;
+    color: #fff;
+    width: 55px;
+    height: 285px;
+    border-radius: 10px 0 0 10px;
+    line-height: 21px;
+    box-sizing: border-box;
+}
+
+.count_bt .speed_bt a {
+    display: block;
+    padding: 68px 10px;
+}
+
+
+/*click_icon*/ 
+
+.click_icon {
+    position: absolute;
+    bottom: 50px;
+    left: 18px;
+    text-align: center;
+}
+
+.click_icon img {
+    display: block;
+    width: 19px;
+    height: 19px;
+}
+.click_icon p {
+    font-size: 10px;
+}
+
+/* call_bt */
+
+.count_bt .call_bt  {
+    background-color: #fff;
+    width: 55px;
+    height: 54px;
+    border-radius: 10px 0 0 10px;
+    margin-top: 80px;
+    cursor: pointer;
+}
+
+.count_bt .call_bt img {
+    margin-top: 11px;
+    margin-left: 3px;
+}
+
+
+/* count_wrap */
+
+.count_wrap {
+    position: absolute;
+    top: 50%;
+    right: -320px;
+    width: 269px;
+    color: #212020;
+    transition: all 0.3s;
+    transition: 0.5s;
+    margin-top: -174px;
+}
+
+.count_wrap.on{
+    right:0;
+}
+
+.count_wrap form {
+    position: relative;
+}
+
+.count_wrap form .speed_count {
+    padding: 30px;
+    height: 285px;
+    padding: 30px 30px 0 30px;
+    box-sizing: border-box;
+    border-radius: 30px 0 0 30px;
+    background-color: #fff;
+}
+
+
+/* 닫기버튼*/
+
+.count_wrap form .x_bt{
+    position: absolute;
+    top:25px;
+    left: -40px;
+    border: 1px dotted #eee;
+    opacity: 0.7;
+    padding: 3px 7px;
+    cursor: pointer;
+}
+
+.count_wrap .x_bt img{
+    width: 15px;
+    height: 15px;
+}
+
+
+/*빠른상담*/
+.count_wrap form p {
+    font-size: 17px;
+    color: #212020;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 7px;
+    margin-bottom: 7px;
+}
+
+
+/*상담서비스선택*/
+
+.count_wrap form .select {
+    padding: 5px 0 5px 0;
+    color: #404040;
+    text-align: left;
+}
+
+.count_wrap form .select input[type="checkbox"] {
+    display: none;
+}
+
+.count_wrap form .select input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 20px;
+    font-size: 13px;
+}
+
+.count_wrap form .select input[type="checkbox"] + label::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.count_wrap form .select input[type="checkbox"]:checked + label {
+    background: url(/img/index/dot.png) no-repeat 2% 55% /15px;
+}
+
+
+/*이름, 전화번호*/
+.count_wrap form .info input {
+    background: #f8f8fa;
+    display: block;
+    width: 170px;
+    border: 1px solid #bbbbbb;
+    padding: 5px 0;
+    margin-top: 8px;
+}
+
+.count_wrap form .info input::placeholder{
+    font-size: 14px;
+    color: #404040;
+    padding: 0 10px; ;
+}
+
+.count_wrap form .info input[type="text"],
+.count_wrap form .info input[type="tel"] {
+    padding-right: 30px;
+}
+
+.count_wrap form .info input[type="text"] {
+    background: url(/img/index/user.png) no-repeat 100% 55% /30px;
+}
+
+.count_wrap form .info input[type="tel"] {
+    background: url(/img/index/call.png) no-repeat 100% 50% /30px;
+}
+
+
+/*개인정보동의*/
+.count_wrap .privacy {
+    margin-top: 5px;
+}
+
+.count_wrap form .privacy input[type="checkbox"] {
+    display: none;
+}
+
+.count_wrap form .privacy input[type="checkbox"] + label span {
+    font-size: 12px;
+    margin-left: 22px;
+}
+
+.count_wrap form .privacy input[type="checkbox"] + label {
+    position: relative;
+}
+
+.count_wrap form .privacy input[type="checkbox"] + label::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background: #eee;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.count_wrap form .privacy input[type="checkbox"]:checked + label::before{
+    background: #eee url(/img/index/check.png) no-repeat 0 70% /15px;
+}
+
+
+/*문의하기*/
+.count_wrap form .call_bt {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.count_wrap form .call_bt a {
+    display: inline-block;
+    background: #ee5a35;
+    border: 1px solid #ee5a35;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 50px;
+    box-sizing: border-box;
+}
+
+/*address*/
+
+.count_wrap .address {
+    margin-top: 15px;
+}
+
+.count_wrap .address a {
+    display: block;
+    position: relative;
+    width: 269px;
+    height: 54px;
+    padding-top: 12px;
+    padding-left: 80px;
+    border-radius: 20px 0 0 20px;
+    background-color: #ee5a35;
+    font-size: 18px;
+    color: #fff;
+    box-sizing: border-box;
+
+}
+
+.count_wrap .address a::after {
+    content: "";
+    top: 15px;
+    left: 45px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: url(/img/index/call.png) no-repeat 0 0 /25px;
+}
